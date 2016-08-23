@@ -81,6 +81,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
         latitudeTv.setText("Latitude: "+String.valueOf(latitude));
         longitudeTv.setText("Longitude: "+String.valueOf(longitude));
+
+        //log the value of lat long
         Log.e("LatLong", "onLocationChanged: "+"Lat: "+location.getLatitude()+" Long: "+location.getLongitude());
     }
 
